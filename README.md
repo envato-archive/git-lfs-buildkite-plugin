@@ -1,4 +1,4 @@
-# git-lfs-initialize-buildkite-plugin
+# git-lfs-buildkite-plugin
 
 For when the git-lfs binaries are installed on your agents, but `git lfs install` hasn't been run
 yet, so buildkite's git clone doesn't have your lfs'd binaries.
@@ -12,6 +12,6 @@ In your `buildkite.yml` pipeline definition:
 
 ```yaml
 plugins:
-  envato/git-lfs-initialize#fd7b28a:
+  envato/git-lfs#fd7b28a:
     key: value # there is no config, but yaml/buildkite (?) seem to demand something here
 ```
